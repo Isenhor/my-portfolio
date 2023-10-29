@@ -1,0 +1,33 @@
+{
+	"name": "project",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"browser-sync": "^2.27.7",
+		"del": "^6.0.0",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-group-css-media-queries": "^1.2.2",
+		"gulp-notify": "^4.0.0",
+		"gulp-plumber": "^1.2.1",
+		"gulp-pug": "^5.0.0",
+		"gulp-sass": "^5.0.0",
+		"gulp-sourcemaps": "^3.0.0",
+		"gulp-watch": "^5.0.1",
+		"sass": "^1.43.4"
+	},
+	"devDependencies": {
+		"gulp-format-html": "^1.2.5",
+		"gulp-imagemin": "^7.0.0",
+		"gulp-pretty-html": "^2.0.10",
+		"gulp-ttf2woff2": "^4.0.1",
+		"gulp-webp": "^4.0.1"
+	}
+}
