@@ -1,0 +1,27 @@
+.header {
+  &__nav {
+	padding: 30px 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social {
+    gap: 26px;
+    align-items: center;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  display: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+
+  @include tablet {
+    display: block;
+  }
+}

@@ -1,3 +1,21 @@
+@mixin tablet-big {
+  @media screen and (max-width: 1139px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -18,10 +36,19 @@ body {
   min-height: 100vh;
 
   -webkit-font-smoothing: antialiased;
+
+  font-family: "Montserrat", sans-serif;
+  color: $dark-color;
+  font-weight: $base-fw;
+  line-height: $base-lh;
 }
 
 main {
   flex-grow: 1;
+}
+
+a {
+  color: inherit;
 }
 
 a,
@@ -88,4 +115,48 @@ select:-webkit-autofill:focus {
 }
 
 .container {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  @include tablet-big {
+    width: 900px;
+  }
+  @include tablet {
+    width: 100%;
+  }
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+// Headings styles
+.h1 {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 1;
+
+  @include tablet-big {
+    font-size: 58px;
+  }
+
+  @include tablet {
+    font-size: 42px;
+  }
+
+  @include tablet-big {
+    font-size: 32px;
+  }
 }

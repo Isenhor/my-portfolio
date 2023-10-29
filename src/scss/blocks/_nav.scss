@@ -1,0 +1,47 @@
+.nav {
+  &__list {
+    gap: 100px;
+
+    @include tablet {
+      padding: 30px 15px 40px;
+      flex-direction: column;
+      gap: 28px;
+      background-color: $light-color;
+      max-width: 400px;
+      width: 320px;
+    }
+  }
+
+  &__list a {
+    font-size: 20px;
+    font-weight: 600;
+
+    @include tablet-big {
+      font-size: 18px;
+    }
+  }
+
+  @include tablet {
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    position: fixed;
+    justify-content: flex-end;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    z-index: 10;
+
+    width: 100%;
+
+    background-color: rgba(37, 73, 116, 0.8);
+    transform: translateX(110%);
+    transition: 0.3s;
+  }
+}
+
+.nav.nav--active {
+  transform: translateX(0);
+}

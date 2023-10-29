@@ -1,0 +1,10 @@
+.about {
+  padding: 82px 0 90px;
+
+  @include tablet-big {
+    padding: 60px 0;
+  }
+  @include tablet {
+    padding: 30px 0 40px;
+  }
+}

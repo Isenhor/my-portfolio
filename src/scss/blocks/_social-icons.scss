@@ -1,0 +1,14 @@
+.svg-ln {
+  width: 32px;
+  height: 32px;
+}
+
+.svg-git {
+  width: 42px;
+  height: 42px;
+
+  @include tablet-big {
+    width: 36px;
+    height: 36px;
+  }
+}

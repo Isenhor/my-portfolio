@@ -1,0 +1,23 @@
+header.header 
+	.container 
+		.header__nav.flex 
+			a.logo HTML Верстальщик
+			nav#menu.nav 
+				ul.nav__list.flex
+					li.nav__item 
+						a.nav__link(href="#") Навыки
+					li.nav__item 
+						a.nav__link(href="#") Портфолио
+					li.nav__item 
+						a.nav__link(href="#") Как я работаю
+					li.nav__item 
+						a.nav__link(href="#") Контакты
+			button.burger(type='button')
+				span.burger-bar
+			.header__social.flex
+				a(href="#") 
+					svg.svg-ln 
+						use(href="./img/spriteSvg.svg#svg-ln")
+				a(href="#") 
+					svg.svg-git 
+						use(href="./img/spriteSvg.svg#svg-git")
