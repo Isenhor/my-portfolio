@@ -1,0 +1,27 @@
+.skills-list {
+  &__item {
+    color: #000;
+    font-size: 22px;
+
+    @include tablet-big {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+
+  &__item::before {
+    content: "\2014";
+    margin-right: 5px;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}

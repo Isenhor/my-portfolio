@@ -16,4 +16,27 @@ section.about
 	.about__center
 		.banner
 			img.banner__img(src="./img/banner/banner-desktop.webp", alt="Banner Img")
-	
+	.about__bottom
+		.container
+			.skills.flex
+				.skills-abilities
+					.skills-title-wrapper
+						.block-title Что я умею:
+					ul.skills-list 
+						li.skills-list__item pixel perfect, полное соответствие макету
+						li.skills-list__item верстаю с сеткой или без
+						li.skills-list__item адаптивная верстка под мобильные устройства
+						li.skills-list__item оптимизация под retina экраны
+						li.skills-list__item с Bootstrap и без него 
+				.skills-contacts
+					.skills-title-wrapper
+						.block-title На связи:
+					.skills-contacts__social 
+						.social-wrapper.flex
+							a.social-link(href="#")
+								svg.svg-tg
+									use(href="./img/spriteSvg.svg#svg-tg")
+							a.social-link(href="#")
+								svg.svg-wa
+									use(href="./img/spriteSvg.svg#svg-wa")
+						a.global-link(href="mailto:nschink89@gmail.com") nschink89@gmail.com	

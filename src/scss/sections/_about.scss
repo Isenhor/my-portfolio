@@ -21,6 +21,9 @@
     }
   }
 
+  &__bottom {
+  }
+
   @include tablet-big {
     padding: 60px 0;
   }
@@ -124,24 +127,8 @@
       height: 250px;
     }
   }
-}
 
-.bottom {
-  gap: 30px;
-
-  &__skills {
-    width: 635px;
-
-    @include tablet-big {
-      width: 439px;
-    }
-
-    @include tablet {
-      width: 354px;
-    }
-
-    @include mobile {
-      width: 100%;
-    }
+  @include mobile {
+    justify-content: center;
   }
 }

@@ -131,7 +131,7 @@ select:-webkit-autofill:focus {
     width: 100%;
   }
   @include mobile {
-    width: 100%;
+    width: 320px;
   }
 }
 

@@ -1,26 +1,31 @@
 .skills {
-  &__item {
-    font-size: 22px;
+  gap: 30px;
 
-    &::before {
-      content: "\2014";
-      margin-right: 5px;
+  @include mobile {
+	flex-direction: column;
+  }
+}
 
-      @include tablet {
-        display: none;
-      }
-    }
+.skills-title-wrapper {
+  margin-bottom: 30px;
 
-    @include tablet-big {
-      font-size: 18px;
-    }
+  @include tablet-big {
+    margin-bottom: 20px;
+  }
+}
 
-    @include tablet {
-      font-size: 16px;
-    }
+.skills-abilities {
+  width: 635px;
+
+  @include tablet-big {
+    width: 493px;
   }
 
-  &__item + &__item {
-    margin-top: 10px;
+  @include tablet {
+    width: 354px;
+  }
+
+  @include mobile {
+    width: 290px;
   }
 }
