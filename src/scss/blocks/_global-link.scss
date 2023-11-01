@@ -1,0 +1,9 @@
+$global-link-color: #1a71d2;
+
+.global-link {
+  cursor: pointer;
+  color: $global-link-color;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+}

@@ -12,3 +12,18 @@
     height: 36px;
   }
 }
+
+.svg-tg,
+.svg-vk,
+.svg-fb,
+.svg-inst,
+.svg-wa,
+.svg-up {
+  width: 48px;
+  height: 48px;
+
+  @include tablet {
+    width: 38px;
+    height: 38px;
+  }
+}

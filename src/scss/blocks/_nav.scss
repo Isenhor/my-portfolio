@@ -12,12 +12,19 @@
     }
   }
 
-  &__list a {
+  &__link {
     font-size: 20px;
     font-weight: 600;
+    transition: 0.3s ease-in-out;
 
     @include tablet-big {
       font-size: 18px;
+    }
+    
+    &:focus,
+    &:hover,
+    &:active {
+      color: $active-color;
     }
   }
 

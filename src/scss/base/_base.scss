@@ -56,6 +56,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus {
+  outline: none;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -73,10 +77,11 @@ p {
   margin: 0;
 }
 
-img {
-  max-width: 100%;
+img,
+svg {
+  display: block;
   height: auto;
-  vertical-align: middle;
+  max-width: 100%;
 }
 
 input,
@@ -156,7 +161,15 @@ select:-webkit-autofill:focus {
     font-size: 42px;
   }
 
-  @include tablet-big {
+  @include mobile {
     font-size: 32px;
   }
+}
+
+.grad-border {
+  display: inline;
+  background-repeat: no-repeat;
+  background-position: center bottom 15px;
+  background-size: 100% 10px;
+  background-image: linear-gradient(to right, $accent-color, $accent-color);
 }

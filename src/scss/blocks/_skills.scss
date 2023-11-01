@@ -1,0 +1,26 @@
+.skills {
+  &__item {
+    font-size: 22px;
+
+    &::before {
+      content: "\2014";
+      margin-right: 5px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include tablet-big {
+      font-size: 18px;
+    }
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+}
