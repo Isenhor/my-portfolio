@@ -1,0 +1,107 @@
+.card {
+  width: 350px;
+
+  &__image {
+    margin-bottom: 16px;
+
+    @include tablet-big {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img-wrapper {
+    position: relative;
+    &:before {
+      content: "";
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 221, 85, 0.75);
+      transition: visibility 0.2s, opacity 0.2s;
+    }
+  }
+
+  .card__img-wrapper:hover {
+    &:before {
+      visibility: visible;
+      opacity: 1;
+    }
+    & .projects {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+
+    @include tablet-big {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+
+    @include tablet-big {
+      font-size: 14px;
+    }
+  }
+
+  @include tablet-big {
+    width: 270px;
+  }
+  @include tablet {
+    width: 226px;
+  }
+  @include mobile {
+    width: 290px;
+  }
+}
+
+.card__image a {
+  display: block;
+}
+
+.card__desc {
+  cursor: pointer;
+  display: block;
+}
+
+.card__desc > * {
+  transition: color 0.2s ease-in;
+}
+
+.card__desc:hover > * {
+  color: $active-color;
+}
+
+.card__img {
+	width: 100%;
+	object-fit: cover;
+  }
+
+.projects {
+  position: absolute;
+  padding: 14px 20px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: $active-color;
+  border-radius: 80px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  opacity: 0;
+  transition: 0.5s;
+  white-space: nowrap;
+}
+

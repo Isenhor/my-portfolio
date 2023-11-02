@@ -5,6 +5,7 @@
 
 @import "sections/header";
 @import "sections/about";
+@import "sections/portfolio";
 @import "sections/footer";
 
 //blocks
@@ -17,3 +18,5 @@
 @import "blocks/skills-list";
 @import "blocks/social-link";
 @import "blocks/global-link";
+@import "blocks/section-title";
+@import "blocks/card";

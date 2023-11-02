@@ -1,0 +1,12 @@
+.section-title {
+  font-size: 54px;
+  font-weight: 700;
+
+  @include tablet-big {
+    font-size: 42px;
+  }
+
+  @include tablet {
+    font-size: 32px;
+  }
+}
