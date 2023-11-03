@@ -1,6 +1,6 @@
 .header {
   &__nav {
-	padding: 30px 0;
+    padding: 30px 0;
     justify-content: space-between;
     align-items: center;
   }
@@ -24,4 +24,10 @@
   @include tablet {
     display: block;
   }
+}
+
+.header__social a:focus,
+.header__social a:hover,
+.header__social a:active {
+  opacity: 0.75;
 }

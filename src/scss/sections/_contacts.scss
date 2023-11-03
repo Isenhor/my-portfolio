@@ -89,6 +89,24 @@
       order: 2;
     }
   }
+
+  &__form {
+    width: 540px;
+
+    /* Tablet Big  */
+    @include tablet-big {
+      width: 420px;
+    }
+
+    /* Mobile */
+    @include mobile {
+      width: 290px;
+    }
+  }
+
+  @include tablet-big {
+    margin-bottom: 27px;
+  }
 }
 
 .contacts-info {
@@ -143,23 +161,5 @@
         font-size: 16px;
       }
     }
-  }
-
-  &__form {
-    width: 540px;
-
-    /* Tablet Big  */
-    @include tablet-big {
-      width: 420px;
-    }
-
-    /* Mobile */
-    @include mobile {
-      width: 290px;
-    }
-  }
-
-  @include tablet-big {
-    margin-bottom: 27px;
   }
 }

@@ -9,7 +9,7 @@
     padding: 30px 0;
   }
 
-  &footer__copyright {
+  &__copyright {
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 1.4;
@@ -18,7 +18,8 @@
       margin-top: 15px;
     }
   }
-  &footer__description {
+
+  &__description {
     width: 825px;
     color: #b0b0b0;
 
@@ -40,11 +41,4 @@
     @include mobile {
     }
   }
-
-  &footer__link {
-    color: #fff !important;
-    line-height: 1.5;
-    text-decoration-line: underline;
-  }
 }
-

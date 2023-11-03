@@ -6,3 +6,9 @@
     gap: 20px;
   }
 }
+
+.social-link:focus,
+.social-link:hover,
+.social-link:active {
+  opacity: 0.75;
+}

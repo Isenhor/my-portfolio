@@ -139,6 +139,12 @@ select:-webkit-autofill:focus {
   }
 }
 
+.container--header{
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .logo {
   cursor: pointer;
 }
@@ -168,6 +174,28 @@ select:-webkit-autofill:focus {
   @include mobile {
     font-size: 32px;
   }
+
+  &.grad-border {
+
+    /* Tablet Big */
+   @include tablet-big {
+      background-position: center bottom 10px;
+      background-size: 100% 10px;
+    }
+
+    /* Tablet */
+    @include tablet {
+      background-position: center bottom 3px;
+      background-size: 100% 8px;
+    }
+
+    /* Mobile */
+    @include mobile {
+      background-position: center bottom 3px;
+      background-size: 100% 8px;
+    }
+  }
+  
 }
 
 .h4 {
@@ -185,4 +213,27 @@ select:-webkit-autofill:focus {
   background-position: center bottom 15px;
   background-size: 100% 10px;
   background-image: linear-gradient(to right, $accent-color, $accent-color);
+}
+
+.grad-border--section {
+  background-position: center bottom 11px;
+  background-size: 100% 8px;
+
+  /* Tablet Big*/
+ @include tablet-big {
+    background-position: center bottom 7px;
+  }
+  /* Tablet */
+  @include tablet {
+    background-position: center bottom 4px;
+  }
+  /* Mobile */
+  @include mobile {
+  }
+  
+}
+
+.grad-border--timeline {
+  background-position: center bottom 2px;
+  background-size: 100% 6px;
 }
