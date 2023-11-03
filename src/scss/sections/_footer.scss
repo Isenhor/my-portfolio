@@ -1,0 +1,50 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  color: #fff;
+  background-color: $footer-bgc;
+
+  /* Tablet Big */
+  @include tablet-big {
+    padding: 30px 0;
+  }
+
+  &footer__copyright {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+
+    & p + p {
+      margin-top: 15px;
+    }
+  }
+  &footer__description {
+    width: 825px;
+    color: #b0b0b0;
+
+    & p + p {
+      margin-top: 15px;
+    }
+
+    /* Tablet Big */
+    @include tablet-big {
+      font-size: 14px;
+    }
+
+    /* Tablet */
+    @include tablet {
+      width: 100%;
+    }
+
+    /* Mobile */
+    @include mobile {
+    }
+  }
+
+  &footer__link {
+    color: #fff !important;
+    line-height: 1.5;
+    text-decoration-line: underline;
+  }
+}
+

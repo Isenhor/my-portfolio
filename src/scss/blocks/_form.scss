@@ -5,7 +5,7 @@
   box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
 
   /* Mobile*/
-  @media (max-width: 767px) {
+  @include mobile {
     padding: 40px 15px;
   }
 }
@@ -22,14 +22,14 @@
     height: 243px;
     background-image: url("./../img/contacts/contacts-icon.svg");
 
-    /* Tablet */
-    @media (max-width: 1139px) {
+    /* Tablet Big */
+    @include tablet-big {
       top: -100px;
       right: -55px;
     }
 
-    /* Tablet Small*/
-    @media (max-width: 899px) {
+    /* Tablet */
+    @include tablet {
       display: none;
     }
   }
@@ -87,12 +87,13 @@
   border-radius: 50px;
   background-color: #fbdc4d !important;
 
-  /* Tablet Small */
-  @media (max-width: 899px) {
+  /* Tablet */
+  @include tablet {
     width: 100%;
   }
+  
   /* Mobile */
-  @media (max-width: 767px) {
+  @include mobile {
     height: 58px;
     padding: 0 72px;
   }
