@@ -22,6 +22,58 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.remove("nav--active");
   });
 
+  // Перемещение плейсхолдера
+  const formItems = document.querySelectorAll(".form-input");
+
+  for (let item of formItems) {
+    const thisParent = item.closest(".form-item");
+    const thisPlaceholder = thisParent.querySelector(".fake-placeholder");
+    const thisInput = thisParent.querySelector(".form-input");
+
+    // Если инпут в фокусе
+    item.addEventListener("focus", () => {
+      thisPlaceholder.classList.add("fake-placeholder--active");
+      thisInput.classList.add("form-input--active");
+    });
+
+    // Когда инпут теряет фокус
+    item.addEventListener("blur", function () {
+      if (item.value.length > 0) {
+        thisPlaceholder.classList.add("fake-placeholder--active");
+        thisInput.classList.add("form-input--active");
+      } else {
+        thisPlaceholder.classList.remove("fake-placeholder--active");
+        thisInput.classList.remove("form-input--active");
+      }
+    });
+  }
+
+  //FORM VALIDATE
+  $(".contact-form").validate({
+    rules: {
+      email: {
+        required: true,
+        email: true,
+      },
+
+      message: {
+        required: true,
+      },
+    },
+    messages: {
+      email: {
+        required: "Введите email",
+        email: "отсутсвует символ @",
+      },
+
+      message: {
+        required: "Поле не должно быть пустым",
+      },
+    },
+    submitHandler: function (form) {
+      ajaxFormSubmit();
+    },
+  });
   /*
 	// Back-to-top
 	const backTopBtn = document.querySelector("#backtop");

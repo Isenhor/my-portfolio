@@ -1,0 +1,37 @@
+section#contacts.contacts
+	.container
+		.contacts__title
+			h2.section-title Контакты
+		.contacts__row
+			.contacts-info
+				.contacts__text
+					p
+						| Если вы ищите специалиста по верстке сайтов или frontend разработчика в команду для работы над
+						| проектом — напишите мне.
+				.contacts__list
+					ul.contacts-list
+						li.contacts-list__item
+							span Email
+							a.global-link.global-link--lh(href='mailto:nschink89@gmail.com') nschink89@gmail.com
+						li.contacts-list__item
+							span Телефон
+							a.global-link.global-link--lh(href='tel:+79801234567') +7 (911) 218-15-31
+				.social-wrapper.flex
+							a.social-link(href="#")
+								svg.svg-tg
+									use(href="./img/spriteSvg.svg#svg-tg")
+							a.social-link(href="#")
+								svg.svg-wa
+									use(href="./img/spriteSvg.svg#svg-wa")
+			.contacts__form
+				.bg-image
+				form.contact-form(action='#')
+					.form-item
+						span.fake-placeholder Ваш Email
+						input.form-input(name='email' type='text')
+					.form-item
+						span.fake-placeholder Сообщение
+						textarea.form-input(name='message')
+					.form-item
+						input.form__btn(type='submit' value='Отправить')
+				#answer

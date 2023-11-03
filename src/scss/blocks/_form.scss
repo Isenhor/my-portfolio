@@ -1,0 +1,109 @@
+.contact-form {
+  position: relative;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 0px 20px 100px -10px rgba(160, 206, 237, 0.75);
+
+  /* Mobile*/
+  @media (max-width: 767px) {
+    padding: 40px 15px;
+  }
+}
+
+.bg-image {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -113px;
+    right: -109px;
+    width: 280px;
+    height: 243px;
+    background-image: url("./../img/contacts/contacts-icon.svg");
+
+    /* Tablet */
+    @media (max-width: 1139px) {
+      top: -100px;
+      right: -55px;
+    }
+
+    /* Tablet Small*/
+    @media (max-width: 899px) {
+      display: none;
+    }
+  }
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & + .form-item {
+    margin-top: 40px;
+  }
+}
+
+.fake-placeholder {
+  pointer-events: none;
+  position: absolute;
+  color: #9d9d9d;
+  font-size: 22px;
+  line-height: 1;
+  transition: 0.2s;
+}
+
+.fake-placeholder--active {
+  color: #eca73f;
+  top: -20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.form-input {
+  height: 40px;
+  border-bottom: 2px solid #e5e5e5;
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  resize: none;
+}
+
+.form-input--active {
+  border-bottom: 2px solid #ff543e;
+}
+
+.form__btn {
+  padding: 0 40px;
+  height: 64px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  width: 197px;
+
+  border-radius: 50px;
+  background-color: #fbdc4d !important;
+
+  /* Tablet Small */
+  @media (max-width: 899px) {
+    width: 100%;
+  }
+  /* Mobile */
+  @media (max-width: 767px) {
+    height: 58px;
+    padding: 0 72px;
+  }
+}
+
+label.error {
+  position: relative;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ff543e;
+}
+
+textarea.form-input {
+  height: 125px;
+}

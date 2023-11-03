@@ -86,9 +86,13 @@ svg {
 
 input,
 button,
+textarea,
 button:focus,
 input:focus {
+  padding: 0;
   outline: none;
+  border: none;
+  box-shadow: 0;
 }
 
 button {
