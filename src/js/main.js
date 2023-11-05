@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  
   // Burger
   const burger = document.querySelector(".burger");
   const menu = document.querySelector("#menu");
@@ -74,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ajaxFormSubmit();
     },
   });
-  /*
+
 	// Back-to-top
 	const backTopBtn = document.querySelector("#backtop");
 	backTopBtn.style.opacity = 0;
@@ -84,5 +85,8 @@ document.addEventListener("DOMContentLoaded", function () {
 	  } else {
 		backTopBtn.style.opacity = 0;
 	  }
-	});*/
+	});
+
+  //AOS Init
+  AOS.init();
 });

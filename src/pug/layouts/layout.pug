@@ -16,6 +16,10 @@ html(lang="ru")
 		link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
 		link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap' rel='stylesheet')
 
+		//AOS
+		link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
+
+
 		//====стили ========
 		link(rel="stylesheet", href="css/main.css")
 		title !{title}
@@ -23,9 +27,12 @@ html(lang="ru")
 	body
 		
 		block content
-		
+		a(href="#top" class="backtop-btn" id="backtop")
+			svg.svg-up 
+				use(href="./img/spriteSvg.svg#svg-up")
 		
 		//=============== мои скрипты ===================
 		script(src="libs/jquery/jquery-3.7.1.min.js")
 		script(src="libs/jQuerryValidate/jquery.validate.min.js")
+		script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
 		script(src="js/main.js")

@@ -85,17 +85,30 @@
   width: 197px;
 
   border-radius: 50px;
-  background-color: #fbdc4d !important;
+  background-color: #fbdc4d;
 
   /* Tablet */
   @include tablet {
     width: 100%;
   }
-  
+
   /* Mobile */
   @include mobile {
     height: 58px;
     padding: 0 72px;
+  }
+
+  &:focus {
+    outline: 1px solid $outline-clr;
+    background-color: $focus-clr;
+  }
+
+  &:hover {
+    background-color: $hover-clr;
+  }
+
+  &:active {
+    background-color: $active-clr;
   }
 }
 
