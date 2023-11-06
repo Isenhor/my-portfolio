@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  
   // Burger
   const burger = document.querySelector(".burger");
   const menu = document.querySelector("#menu");
@@ -76,17 +75,26 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 
-	// Back-to-top
-	const backTopBtn = document.querySelector("#backtop");
-	backTopBtn.style.opacity = 0;
-	document.addEventListener("scroll", function () {
-	  if (window.pageYOffset > 500) {
-		backTopBtn.style.opacity = 1;
-	  } else {
-		backTopBtn.style.opacity = 0;
-	  }
-	});
+  // Back-to-top
+  const backTopBtn = document.querySelector("#backtop");
+  backTopBtn.style.opacity = 0;
+  document.addEventListener("scroll", function () {
+    if (window.pageYOffset > 500) {
+      backTopBtn.style.opacity = 1;
+    } else {
+      backTopBtn.style.opacity = 0;
+    }
+  });
 
   //AOS Init
   AOS.init();
+
+  //Mixitup
+  let containerEl = document.querySelector("#mix-cards");
+
+  let mixer = mixitup(containerEl, {
+    classNames: {
+      block: "",
+    },
+  });
 });
